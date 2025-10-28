@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const comicsRouter = require('express').Router();
 const comicsController = require('../controllers/comics');
-router.get('/comics', comicsController.getComics);
-module.exports = router;
+comicsRouter.get('/todo', comicsController.getComics);
+module.exports = comicsRouter
