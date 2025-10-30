@@ -1,11 +1,11 @@
-const comicsController = {};
+const speciesController = {};
 const axios = require('axios');
 
-comicsController.getComics = (req, res) => {
+speciesController.getSpecies = (req, res) => {
     const POKEMON_API = process.env.POKEMON_API;
 
-    axios.get(POKEMON_API + '/pokemon')
+    axios.get(POKEMON_API + '/pokemon-species')
     .then(resp => {res.json(resp.data);})
 }
 
-module.exports = comicsController;
+module.exports = speciesController;
