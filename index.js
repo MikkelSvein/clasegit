@@ -2,6 +2,7 @@ const express = require('express');
 const comicsRouter = require('./routes/comics');
 const abilityRouter = require('./routes/ability');
 const speciesRouter = require('./routes/species');
+const typesRouter = require('./routes/types');
 
 const app = express();
 
