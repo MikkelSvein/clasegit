@@ -1,6 +1,6 @@
 const express = require('express');
 const comicsRouter = require('./routes/comics');
-const typesRouter = require('./routes/types');
+const speciesRouter = require('./routes/species');
 
 const app = express();
 
@@ -14,6 +14,7 @@ app.use("/comics", comicsRouter);
 app.use("/types", typesRouter);
 
 
+app.use("/species", speciesRouter);
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
